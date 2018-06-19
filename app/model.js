@@ -2,10 +2,7 @@
 var Model = (function () {
     function Model() {
         this.user = "Nader";
-        this.items = [new TodoItem("Buy Suit", false),
-            new TodoItem("Get a Haircut", false),
-            new TodoItem("Buy Groceries", true),
-            new TodoItem("Call Accountant", false)];
+        this.items = [];
     }
     return Model;
 }());
