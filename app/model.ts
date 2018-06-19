@@ -5,13 +5,13 @@ export class Model {
   constructor(){
     this.user="Nader";
     this.items=[new TodoItem("Buy Suit", false),
-    new ToDoItem("Get a Haircut", false),
-    new ToDoItem("Buy Groceries",true),
-    new ToDoItem("Call Accountant", false)]
+    new TodoItem("Get a Haircut", false),
+    new TodoItem("Buy Groceries",true),
+    new TodoItem("Call Accountant", false)]
   }
 }
 
-export class ToDoItem {
+export class TodoItem {
   action;
   done;
 
