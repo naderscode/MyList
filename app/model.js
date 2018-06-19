@@ -3,18 +3,18 @@ var Model = (function () {
     function Model() {
         this.user = "Nader";
         this.items = [new TodoItem("Buy Suit", false),
-            new ToDoItem("Get a Haircut", false),
-            new ToDoItem("Buy Groceries", true),
-            new ToDoItem("Call Accountant", false)];
+            new TodoItem("Get a Haircut", false),
+            new TodoItem("Buy Groceries", true),
+            new TodoItem("Call Accountant", false)];
     }
     return Model;
 }());
 exports.Model = Model;
-var ToDoItem = (function () {
-    function ToDoItem(action, done) {
+var TodoItem = (function () {
+    function TodoItem(action, done) {
         this.action = action;
         this.done = done;
     }
-    return ToDoItem;
+    return TodoItem;
 }());
-exports.ToDoItem = ToDoItem;
+exports.TodoItem = TodoItem;
